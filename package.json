@@ -16,7 +16,7 @@
       "client"
     ]
   },
-  "author": "CodesmithLLC https://github.com/CodesmithLLC <hello@codesmith.io>",
+  "author": "johnny_bryan",
   "license": "ISC",
   "dependencies": {
     "browserify": "^17.0.0",
