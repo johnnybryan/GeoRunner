@@ -3,9 +3,7 @@ const path = require('path');
 
 module.exports = {
   mode: 'development',
-  entry: {
-    index: './client/index.js'
-  },
+  entry: ['regenerator-runtime/runtime.js', './client/index.js'],
   output: {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'build') 
@@ -25,7 +23,7 @@ module.exports = {
       }
     },
     {
-      test: /\.s[ac]ss$/i,
+      test: /\.css$/i,
       use: ['style-loader', 'css-loader', 'sass-loader']
     }
     ]
